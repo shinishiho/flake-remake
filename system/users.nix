@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   users.users.nakxkri = { # Change your username
@@ -16,16 +16,26 @@
     ];
   };
 
+  home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+    users = {
+      "nakxkri" = import ../home/home.nix; # Change your username
+    };
+  };
+
   # Change runtime directory size
   services.logind.extraConfig = "RuntimeDirectorySize=8G";
 
-  # Enable Display Manager
+  # Enable Display Manager and autologin
   services.greetd = {
     enable = true;
     settings = {
       default_session = {
         command = "${pkgs.greetd.greetd}/bin/agreety --cmd Hyprland";
-        user = "nakxkri"; # Change your username
+      };
+      initial_session = {
+        command = "Hyprland";
+	      user = "nakxkri";
       };
     };
   };

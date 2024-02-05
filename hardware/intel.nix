@@ -3,7 +3,7 @@
 {
   hardware.cpu.intel.updateMicrocode = true;
   services.undervolt = {
-    enable = true;
+    enable = false;
     coreOffset = null;
     gpuOffset = null;
     temp = null;

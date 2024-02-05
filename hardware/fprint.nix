@@ -3,5 +3,5 @@
 {
   service.fprintd = {
     enable = true;
-  }
+  };
 }

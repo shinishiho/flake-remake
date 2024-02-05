@@ -1,7 +1,11 @@
 { pkgs, ... }:
 
 {
-  imports = [ ./system ./hardware ];
+  imports = [
+    /etc/nixos/hardware-configuration.nix
+    inputs.home-manager.nixosModule.default
+    ./system ./hardware
+  ];
 
   # Nix Configuration
   nix.settings = {

@@ -10,7 +10,7 @@
   networking.hostName = "shinishiho"; # Define your hostname.
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  # networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -24,8 +24,8 @@
     after = [ "network.target" ];
     serviceConfig = {
       Type = "oneshot";
-      ExecStart = "${pkgs.macchanger}/bin/macchanger -r wlan0";
-      ExecStop = "${pkgs.macchanger}/bin/macchanger -p wlan0";
+      ExecStart = "${pkgs.macchanger}/bin/macchanger -r wlo1";
+      ExecStop = "${pkgs.macchanger}/bin/macchanger -p wlo1";
       RemainAfterExit = true;
     };
   };
@@ -40,9 +40,12 @@
   networking = {
     nameservers = [ "127.0.0.1" "::1" ];
     # If using dhcpcd:
-    dhcpcd.extraConfig = "nohook resolv.conf";
+    # dhcpcd.extraConfig = "nohook resolv.conf";
     # If using NetworkManager:
-    networkmanager.dns = "none";
+    networkmanager = {
+      enable = true;
+      dns = "none";
+    };
   };
 
   services.dnscrypt-proxy2 = {

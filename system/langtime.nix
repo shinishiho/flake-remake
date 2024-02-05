@@ -6,10 +6,10 @@
   time.timeZone = "Asia/Ho_Chi_Minh";
 
   # Select internationalisation properties.
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "us";
     variant = "colemak_dh";
-    xkbOptions = "grp:alt_shift_toggle";
+    options = "grp:alt_shift_toggle";
   };
   
   i18n.supportedLocales = [

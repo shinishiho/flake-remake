@@ -12,6 +12,6 @@
     ./services.nix
     ./sound.nix
     ./users.nix
-    ./virtulisation.nix
+    ./virtualisation.nix
   ];
 }
