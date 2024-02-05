@@ -7,7 +7,7 @@
 
   outputs = { nixpkgs, ... } @ inputs:
   {
-    nixosConfigurations.isitreal-laptop = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.shinishiho = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
         ./configuration.nix
