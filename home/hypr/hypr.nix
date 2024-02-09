@@ -29,8 +29,8 @@
       );
 
       input = {
-        kb_layout = us;
-        kb_variant = colemak_dh;
+        kb_layout = "us";
+        kb_variant = "colemak_dh";
         follow_mouse = 1;
 
         touchpad = {
