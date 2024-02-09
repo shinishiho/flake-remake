@@ -33,7 +33,7 @@
         kb_variant = colemak_dh;
         follow_mouse = 1;
 
-        touchpad {
+        touchpad = {
           natural_scroll = no;
         };
 
