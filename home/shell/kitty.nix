@@ -8,6 +8,10 @@
       name = "Cascadia Code Nerd Font Mono";
       size = 10;
     };
+    settings = {
+      window_padding_width = 25;
+    };
+
     shellIntegration.enableZshIntegration = true;
   };
 }
