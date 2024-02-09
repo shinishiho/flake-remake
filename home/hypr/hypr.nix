@@ -27,6 +27,19 @@
           )
           10)
       );
+
+      input = {
+        kb_layout = us
+        kb_variant = colemak_dh
+        follow_mouse = 1
+
+        touchpad {
+          natural_scroll = no;
+        };
+
+        sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
+        force_no_accel = 1
+      };
     };
   };
 }
