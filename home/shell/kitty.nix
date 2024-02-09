@@ -4,7 +4,7 @@
   programs.kitty = {
     enable = true;
     font = {
-      package = (pkgs.nerdfonts.override { fonts = [ "Caskaydia Cove" ]; });
+      package = (pkgs.nerdfonts.override { fonts = [ "CascadiaCode" ]; });
       name = "CaskaydiaCove Nerd Font Mono";
       size = 10;
     };
