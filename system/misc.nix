@@ -12,4 +12,7 @@
     flags = [ "--update-input" "nixpkgs" "--update-input" "--commit-lock-file" ];
     dates = "weekly";
   };
+
+  # OpenGL
+  hardware.opengl.enable = true;
 }

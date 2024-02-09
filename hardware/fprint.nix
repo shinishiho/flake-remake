@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  service.fprintd = {
+  services.fprintd = {
     enable = true;
   };
 }
