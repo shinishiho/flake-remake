@@ -29,16 +29,16 @@
       );
 
       input = {
-        kb_layout = us
-        kb_variant = colemak_dh
-        follow_mouse = 1
+        kb_layout = "us";
+        kb_variant = "colemak_dh";
+        follow_mouse = 1;
 
-        touchpad {
-          natural_scroll = no;
+        touchpad = {
+          natural_scroll = false;
         };
 
-        sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
-        force_no_accel = 1
+        sensitivity = 0; # -1.0 - 1.0, 0 means no modification.
+        force_no_accel = 1;
       };
     };
   };
