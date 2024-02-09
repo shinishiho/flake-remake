@@ -5,7 +5,7 @@
     enable = true;
     font = {
       package = (pkgs.nerdfonts.override { fonts = [ "CascadiaCode" ]; });
-      name = "CaskaydiaCove Nerd Font Mono";
+      name = "Cascadia Code Nerd Font Mono";
       size = 10;
     };
     shellIntegration.enableZshIntegration = true;
