@@ -3,7 +3,7 @@
 {
   imports = [
     /etc/nixos/hardware-configuration.nix
-    inputs.home-manager.nixosModule.default
+    inputs.home-manager.nixosModules.default
     ./system ./hardware
   ];
 

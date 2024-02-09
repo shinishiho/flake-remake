@@ -8,7 +8,7 @@
     hyprland.url = "github:hyprwm/Hyprland";
   };
 
-  outputs = { nixpkgs, ... } @ inputs:
+  outputs = { nixpkgs, self, ... } @ inputs:
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
@@ -18,7 +18,7 @@
       specialArgs = { inherit inputs; };
       modules = [
         ./configuration.nix
-        inputs.home-manager.nixosModule.default
+        inputs.home-manager.nixosModules.default
       ];
     };
   };
