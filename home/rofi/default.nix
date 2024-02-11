@@ -9,7 +9,7 @@
       modi = "drun";
       show-icons = true;
       display-drun = "";
-      drun-display-format: "{name}";
+      drun-display-format = "{name}";
     };
     theme = let inherit (config.lib.formats.rasi) mkLiteral;
       in {
@@ -67,7 +67,7 @@
           children = map mkLiteral [ "entry" ];
         };
 
-        "#prompt" {
+        "#prompt" = {
           enabled = true;
           background-color = mkLiteral "inherit";
           text-color = mkLiteral "inherit";
@@ -83,11 +83,11 @@
           enabled = true;
           background-color = mkLiteral "inherit";
           text-color = mkLiteral "inherit";
-          cursor: mkLiteral "text";
-          placeholder: "Search";
-          placeholder-color: mkLiteral "inherit";
-          vertical-align: 0.5;
-          horizontal-align: 0.5;
+          cursor = mkLiteral "text";
+          placeholder = "Search";
+          placeholder-color = mkLiteral "inherit";
+          vertical-align = mkLiteral "0.5";
+          horizontal-align = mkLiteral "0.5";
         };
 
         "#listview" = {
@@ -145,8 +145,8 @@
           text-color = mkLiteral "inherit";
           highlight = mkLiteral "inherit";
           cursor = mkLiteral "inherit";
-          vertical-align = 0.5;
-          horizontal-align = 0.5;
+          vertical-align = mkLiteral "0.5";
+          horizontal-align = mkLiteral "0.5";
         };
 
         "#error-message" = {
@@ -160,8 +160,8 @@
         "#textbox" = {
           background-color = mkLiteral "transparent";
           text-color = mkLiteral "@foreground";
-          vertical-align = 0.5;
-          horizontal-align = 0.0;
+          vertical-align = mkLiteral "0.5";
+          horizontal-align = mkLiteral "0.0";
           highlight = mkLiteral "none";
         };
       };
