@@ -6,7 +6,7 @@
     settings = {
 
       # https://wiki.hyprland.org/Configuring/Monitors/
-      monitor = ",1920x1080@60,0x0,1,bitdepth=10";
+      monitor = ",1920x1080@60,0x0,1,bitdepth,10";
 
       # Animations
       animations = {
