@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, inputs, pkgs, ... }:
 
 {
   home.username = "nakxkri";
@@ -6,10 +6,14 @@
 
   imports = [
     ./hypr
+    ./rofi
     ./shell
     ./scripts
+    inputs.nix-colors.homeManagerModules.default
   ];
 
-  home.stateVersion = "23.11";
+  colorScheme = inputs.nix-colors.colorschemes.gruvbox-dark-hard;
+
+  home.stateVersion = "24.05";
   programs.home-manager.enable = true;
 }
