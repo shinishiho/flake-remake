@@ -62,8 +62,17 @@
           "$mod, F, exec, firefox"
           "$mod, T, exec, kitty tmux"
           "$mod, E, exec, nautilus"
+
+          # System control
+          "XF86AudioRaiseVolume, exec, pamixer -i 5"
+          "XF86AudioLowerVolume, exec, pamixer -d 5"
+          "XF86AudioMute, exec, pamixer -t"
+          "XF86MonBrightnessUp, exec, light -A 5"
+          "XF86MonBrightnessDown, exec, light -U 5"
+
           ", Print, exec, grimblast copy area"
         ]
+        # Workspaces
         ++ (
           # workspaces
           # binds $mod + [shift +] {1..10} to [move to] workspace {1..10}

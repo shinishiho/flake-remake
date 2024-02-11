@@ -50,13 +50,8 @@
     wlrctl
     hyprpicker
     pyprland
-    waybar
-    rofi-wayland
     dunst
-    avizo
     wlogout
-    wpaperd
-    # swww
     gifsicle
   ];
 }
