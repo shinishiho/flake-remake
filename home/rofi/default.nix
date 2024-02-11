@@ -51,37 +51,14 @@
           border-radius = mkLiteral "0px 0px 0px 0px";
           border-color = mkLiteral "@selected";
           background-color = mkLiteral "transparent";
-          children = map mkLiteral [ "inputbar" "listview" ];
-        };
-
-        "#inputbar" = {
-          enabled = true;
-          spacing = mkLiteral "10px";
-          margin = mkLiteral "0px";
-          padding = mkLiteral "0px";
-          border = mkLiteral "0px solid";
-          border-radius = mkLiteral "0px";
-          border-color = mkLiteral "@selected";
-          background-color = mkLiteral "@background";
-          text-color = mkLiteral "@foreground";
-          children = map mkLiteral [ "entry" ];
-        };
-
-        "#prompt" = {
-          enabled = false;
-        };
-        "#textbox-prompt-colon" = {
-          enabled = false;
-        };
-        "#entry" = {
-          enabled = false;
+          children = map mkLiteral [ "listview" ];
         };
 
         "#listview" = {
           enabled = true;
           columns = 3;
           lines = 2;
-          cycle = true;
+          cycle = false;
           dynamic = true;
           scollbar = false;
           layout = "vertical";
