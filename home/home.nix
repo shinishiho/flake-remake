@@ -7,7 +7,6 @@
   imports = [
     ./hypr
     ./shell
-    ./rofi
     ./scripts
   ];
 

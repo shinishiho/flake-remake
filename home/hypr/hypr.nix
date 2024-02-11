@@ -4,6 +4,10 @@
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
+
+      # https://wiki.hyprland.org/Configuring/Monitors/
+      monitor = ",1920x1080@60,0x0,1,bitdepth=10";
+
       # Animations
       animations = {
         enabled = true;
@@ -54,7 +58,6 @@
       };
 
       # Keybinds
-
       "$mod" = "SUPER";
       bind =
         [
@@ -91,7 +94,6 @@
       );
 
       # Input
-
       input = {
         kb_layout = "us";
         kb_variant = "colemak_dh";
@@ -122,7 +124,6 @@
       };
 
       # Cursor & Font
-
       exec-once = [
         "hyprctl setcursor Bibata-Modern-Classic 24"
         "wl-paste --type text --watch cliphist store"
@@ -130,7 +131,6 @@
       ];
 
       # Layouts
-
       dwindle = {
         pseudotile = true;
         preserve_split = true;
@@ -143,7 +143,6 @@
       };
 
       # Window Rules
-
       windowrule = [
         "noblur,.*"
         "float,title:^(Open File)(.*)$"
@@ -155,7 +154,6 @@
       ];
 
       # Decorations
-
       decoration = {
         rounding = 20;
 
@@ -189,7 +187,6 @@
       };
 
       # General
-
       general = {
         # Gaps and border
         gaps_in = 4;

@@ -2,6 +2,6 @@
 
 {
   home.packages = [
-    (imports ./test.nix { inherit pkgs; })
+    (import ./test.nix { inherit pkgs; })
   ];
 }
