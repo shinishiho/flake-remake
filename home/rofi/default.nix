@@ -51,7 +51,7 @@
           border-radius = mkLiteral "0px 0px 0px 0px";
           border-color = mkLiteral "@selected";
           background-color = mkLiteral "transparent";
-          children = map mkLiteral [ "listview" ];
+          children = map mkLiteral [  "listview" ];
         };
 
         "#listview" = {
@@ -124,5 +124,11 @@
           highlight = mkLiteral "none";
         };
       };
+  };
+
+  home.file."${config.xdg.configHome}/rofi/assets" = {
+    recursive = true;
+    source = ./assets;
+    target = "${config.xdg.configHome}/rofi/assets";
   };
 }
