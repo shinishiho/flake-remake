@@ -9,7 +9,7 @@
       modi = "drun";
       show-icons = true;
       display-drun = "";
-      drun-display-format: "{name}";
+      drun-display-format = "{name}";
     };
     theme = let inherit (config.lib.formats.rasi) mkLiteral;
       in {
@@ -67,7 +67,7 @@
           children = map mkLiteral [ "entry" ];
         };
 
-        "#prompt" {
+        "#prompt" = {
           enabled = true;
           background-color = mkLiteral "inherit";
           text-color = mkLiteral "inherit";
