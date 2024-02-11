@@ -67,29 +67,6 @@
           children = map mkLiteral [ "entry" ];
         };
 
-        "#prompt" = {
-          enabled = true;
-          background-color = mkLiteral "inherit";
-          text-color = mkLiteral "inherit";
-        };
-        "#textbox-prompt-colon" = {
-          enabled = true;
-          expand = false;
-          str = "::";
-          background-color = mkLiteral "inherit";
-          text-color = mkLiteral "inherit";
-        };
-        "#entry" = {
-          enabled = true;
-          background-color = mkLiteral "inherit";
-          text-color = mkLiteral "inherit";
-          cursor = mkLiteral "text";
-          placeholder = "Search";
-          placeholder-color = mkLiteral "inherit";
-          vertical-align = mkLiteral "0.5";
-          horizontal-align = mkLiteral "0.5";
-        };
-
         "#listview" = {
           enabled = true;
           columns = 3;
@@ -139,14 +116,6 @@
           text-color = mkLiteral "inherit";
           size = mkLiteral "128px";
           cursor = mkLiteral "inherit";
-        };
-        "#element-text" = {
-          background-color = mkLiteral "transparent";
-          text-color = mkLiteral "inherit";
-          highlight = mkLiteral "inherit";
-          cursor = mkLiteral "inherit";
-          vertical-align = mkLiteral "0.5";
-          horizontal-align = mkLiteral "0.5";
         };
 
         "#error-message" = {
