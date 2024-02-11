@@ -67,6 +67,16 @@
           children = map mkLiteral [ "entry" ];
         };
 
+        "#prompt" = {
+          enabled = false;
+        };
+        "#textbox-prompt-colon" = {
+          enabled = false;
+        };
+        "#entry" = {
+          enabled = false;
+        };
+
         "#listview" = {
           enabled = true;
           columns = 3;
@@ -116,6 +126,9 @@
           text-color = mkLiteral "inherit";
           size = mkLiteral "128px";
           cursor = mkLiteral "inherit";
+        };
+        "#element-text" = {
+          enabled = false;
         };
 
         "#error-message" = {
