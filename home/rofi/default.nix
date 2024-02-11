@@ -20,7 +20,7 @@
           foreground = mkLiteral "#FFFFFFFF";
           selected = mkLiteral "#61AFEFFF";
           active = mkLiteral "#98C379FF";
-          urgent = mkLiteral "#$E06C75FF";
+          urgent = mkLiteral "#E06C75FF";
         };
 
         "#window" = {
