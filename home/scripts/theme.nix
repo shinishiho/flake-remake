@@ -5,13 +5,14 @@ pkgs.writeShellApplication {
   runtimeInputs = with pkgs; [ home-manager coreutils ripgrep ];
   text =
   ''
-  ColorSel=$( ls ${config.xdg.configHome}/rofi/assets/*.svg | awk -F'/' '{print $NF}' | cut -d'.' -f 1 | ls | grep -v '[0-9]' | while read color
-  do
+  colors=("cyan" "green" "magenta" "orange" "purple" "yellow")
+  themes=("dark" "light")
+
+  ColorSel=$( for color in $\{colors[@]}; do
     echo -en "$color\x00icon\x1f${config.xdg.configHome}/rofi/assets/$\{color}.svg\n"
   done | ${pkgs.rofi-wayland}/bin/rofi -dmenu )
 
-  ThemeSel=$( ls ${config.xdg.configHome}/rofi/assets/*.svg | awk -F'/' '{print $NF}' | cut -d'.' -f 1 | grep '[0-9]' | while read theme
-  do
+  ThemeSel=$( for theme in $\{themes[@]}; do
     echo -en "$theme\x00icon\x1f${config.xdg.configHome}/rofi/assets/$\{theme}.svg\n"
   done | ${pkgs.rofi-wayland}/bin/rofi -dmenu -theme-str "listview{columns:2;lines:1;}")
 
