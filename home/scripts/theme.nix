@@ -13,7 +13,7 @@ pkgs.writeShellApplication {
   ThemeSel=$( ls ${config.xdg.configHome}/rofi/assets/*.svg | awk -F'/' '{print $NF}' | cut -d'.' -f 1 | grep '[0-9]' | while read theme
   do
     echo -en "$theme\x00icon\x1f${config.xdg.configHome}/rofi/assets/$\{theme}.svg\n"
-  done | ${pkgs.rofi-wayland}/bin/rofi -dmenu -theme-str "listview{columns:2;lines:1;})
+  done | ${pkgs.rofi-wayland}/bin/rofi -dmenu -theme-str "listview{columns:2;lines:1;}")
 
    
 '';
