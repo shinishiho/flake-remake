@@ -13,41 +13,43 @@
   ];
 
   colorScheme = inputs.nix-colors.colorschemes.gruvbox-dark-hard; # Default color scheme
-  specialisation.light-cyan = {
-    colorScheme = inputs.nix-colors.colorschemes.gruvbox-light-hard;
-  }; # Specialisation for default
-  specialisation.dark-cyan = {
-    colorScheme = inputs.nix-colors.colorschemes.gruvbox-dark-hard;
-  };
-  specialisation.light-green = {
-    colorScheme = inputs.nix-colors.colorschemes.gruvbox-light-soft;
-  };
-  specialisation.dark-green = {
-    colorScheme = inputs.nix-colors.colorschemes.gruvbox-dark-soft;
-  };
-  specialisation.light-magenta = {
-    colorScheme = inputs.nix-colors.colorschemes.gruvbox-light-medium;
-  };
-  specialisation.dark-magenta = {
-    colorScheme = inputs.nix-colors.colorschemes.gruvbox-dark-medium;
-  };
-  specialisation.light-orange = {
-    colorScheme = inputs.nix-colors.colorschemes.gruvbox-light-hard;
-  };
-  specialisation.dark-orange = {
-    colorScheme = inputs.nix-colors.colorschemes.gruvbox-dark-hard;
-  };
-  specialisation.light-purple = {
-    colorScheme = inputs.nix-colors.colorschemes.gruvbox-light-soft;
-  };
-  specialisation.dark-purple = {
-    colorScheme = inputs.nix-colors.colorschemes.gruvbox-dark-soft;
-  };
-  specialisation.light-yellow = {
-    colorScheme = inputs.nix-colors.colorschemes.gruvbox-light-medium;
-  };
-  specialisation.dark-yellow = {
-    colorScheme = inputs.nix-colors.colorschemes.gruvbox-dark-medium;
+  specialisation = {
+    light-cyan.configuration = {
+      colorScheme = inputs.nix-colors.colorschemes.gruvbox-light-hard;
+    };
+    dark-cyan.configuration = {
+      colorScheme = inputs.nix-colors.colorschemes.gruvbox-dark-hard;
+    };
+    light-green.configuration = {
+      colorScheme = inputs.nix-colors.colorschemes.gruvbox-light-soft;
+    };
+    dark-green.configuration = {
+      colorScheme = inputs.nix-colors.colorschemes.gruvbox-dark-soft;
+    };
+    light-magenta.configuration = {
+      colorScheme = inputs.nix-colors.colorschemes.gruvbox-light-medium;
+    };
+    dark-magenta.configuration = {
+      colorScheme = inputs.nix-colors.colorschemes.gruvbox-dark-medium;
+    };
+    light-orange.configuration = {
+      colorScheme = inputs.nix-colors.colorschemes.gruvbox-light-hard;
+    };
+    dark-orange.configuration = {
+      colorScheme = inputs.nix-colors.colorschemes.gruvbox-dark-hard;
+    };
+    light-purple.configuration = {
+      colorScheme = inputs.nix-colors.colorschemes.gruvbox-light-soft;
+    };
+    dark-purple.configuration = {
+      colorScheme = inputs.nix-colors.colorschemes.gruvbox-dark-soft;
+    };
+    light-yellow.configuration = {
+      colorScheme = inputs.nix-colors.colorschemes.gruvbox-light-medium;
+    };
+    dark-yellow.configuration = {
+      colorScheme = inputs.nix-colors.colorschemes.gruvbox-dark-medium;
+    };
   };
 
   home.stateVersion = "24.05";
