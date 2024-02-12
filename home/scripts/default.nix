@@ -3,6 +3,6 @@
 {
   home.packages = [
     (import ./test.nix { inherit pkgs; })
-    (import ./theme.nix { inherit pkgs; inherit config; })
+    #(import ./theme.nix { inherit pkgs; inherit config; })
   ];
 }
