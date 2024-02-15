@@ -33,6 +33,5 @@ pkgs.writeShellApplication {
       done
     fi
   done
-fi
 '';
 }
