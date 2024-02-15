@@ -205,6 +205,8 @@
         #focus_to_other_workspaces = true; # ahhhh i still haven't properly implemented this
         allow_tearing = false; # some guy told me tearing might make things smoother idk
       };
+
+      source = "~/.config/hypr/themes/colors.conf";
     };
   };
 }

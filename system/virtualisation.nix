@@ -36,8 +36,6 @@
     distrobox
     qemu
 
-    waydroid
-
     podman-compose
     podman-tui
 
